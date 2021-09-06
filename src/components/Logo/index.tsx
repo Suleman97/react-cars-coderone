@@ -1,7 +1,6 @@
 import { ReactElement } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import CarLogoImg from 'assets/images/car-logo.png';
 
 const LogoContainer = styled.div`
   ${tw`
@@ -38,7 +37,7 @@ export const Logo = (): ReactElement => {
   return (
     <LogoContainer>
       <Image>
-        <img src={CarLogoImg} alt="website-logo" />
+        <img src="/assets/images/car-logo.png" alt="website-logo" />
       </Image>
       <LogoText>YourCar.</LogoText>
     </LogoContainer>
