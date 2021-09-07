@@ -1,3 +1,4 @@
+import { Button } from 'components';
 import { SCREENS } from 'constant';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
@@ -133,6 +134,15 @@ const StandaloneCar = styled.div`
     top: -9em;
   }
 `;
+
+const ButtonContainer = styled.div`
+  ${tw`
+    flex
+    flex-wrap
+    mt-4
+  `}
+`;
+
 export const TopSection = (): ReactElement => {
   return (
     <TopSectionContainer>
@@ -143,6 +153,10 @@ export const TopSection = (): ReactElement => {
           at the best price for you and get the best quality cars for as long as
           you like.
         </Description>
+        <ButtonContainer>
+          <Button text="Book Your Ride" />
+          <Button theme="filled" text="Sell Your Car" />
+        </ButtonContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
