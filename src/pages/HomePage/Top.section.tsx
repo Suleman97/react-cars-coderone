@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const TopSectionContainer = styled.div`
-  min-height: 600px;
+  min-height: 400px;
   margin-top: 6em;
   ${tw`
   w-full
