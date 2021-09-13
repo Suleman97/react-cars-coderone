@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import { Marginer, Navbar } from 'components';
 import { ReactElement } from 'react';
 import { TopSection } from './Top.section';
-import { BookCard, BookingSteps } from 'sections';
+import { AboutUs, BookCard, BookingSteps } from 'sections';
 
 const PageContainer = styled.div`
   ${tw`
@@ -24,6 +24,8 @@ export const HomePage = (): ReactElement => {
       <Marginer direction="vertical" margin="4em" />
       <BookCard />
       <BookingSteps />
+      <Marginer direction="vertical" margin="1em" />
+      <AboutUs />
     </PageContainer>
   );
 };
